@@ -19,7 +19,7 @@ body{
     width: 30vw;
     /* overflow: hidden; */
     transform: translateY(-1932px);
-    transition: transform 1s;
+    transition: transform ease-in-out 1s;
     /* padding: .5rem 0; */
 }
 p{
@@ -44,7 +44,7 @@ p{
     width: 70vw;
     /* overflow: hidden; */
     transform: translateY(0);
-    transition: transform 1s;
+    transition: transform ease-in 1s;
 }
 .slider-container > .right > .sub-Container{
     height: 100%;
