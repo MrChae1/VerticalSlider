@@ -5,8 +5,7 @@ function changeSlider(){
     const allRight = Array.from(sliderRight.querySelectorAll('.sub-Container'))
     let currentslide = 0;
     let leftslide = 3;
-    const slide_count = allRight.length; 
-
+    const slide_count = allRight.length;
     const getClick = () => {
         const allBTN = document.querySelector('.All-btn');
         console.log(allBTN);
@@ -34,16 +33,12 @@ function changeSlider(){
     }
     return { getClick }
 }
-
 function change(slides, allRight, slideR, slideL, Lslide){
     slideR.style.transform = `translateY(${-slides * allRight[0].offsetHeight}px)`;
     slideL.style.transform = `translateY(${-Lslide * allRight[0].offsetHeight}px)`;
 }
-
-
 function startGame(){
     const change = changeSlider();
     change.getClick();
-    
 }
 const start = startGame();
